@@ -1,8 +1,6 @@
-package baecjoon_collection;
-
 import java.util.Scanner;
 
-public class P14620 {
+public class P14620F {
     static int[][] map;
     static int N;
     static boolean[][] visit;

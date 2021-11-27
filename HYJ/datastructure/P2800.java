@@ -1,5 +1,3 @@
-package baecjoon_collection;
-
 import java.util.*;
 
 public class P2800 {
