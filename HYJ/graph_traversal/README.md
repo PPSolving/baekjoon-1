@@ -11,7 +11,7 @@ BFS, DFS 유형을 다양하게 골랐습니다.
 문제를 보고 어떤 알고리즘을 써야할지 잘 판단하셔야 합니다.
 
 <br>
-
+ 
 ***❗️❗️꼭 문제를 순서대로 안풀어도 됩니다.❗️❗️***
 
 [백준 문제집](https://www.acmicpc.net/workbook/view/6853)
@@ -22,9 +22,9 @@ BFS, DFS 유형을 다양하게 골랐습니다.
 | 02 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/11725" target="_blank">11725</a> | <a href="https://www.acmicpc.net/problem/11725" target="_blank">트리의 부모 찾기</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"/> | <a href="./../solution/graph_traversal/11725">바로가기</a> | 완료
 | 03 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/1325" target="_blank">1325</a> | <a href="https://www.acmicpc.net/problem/1325" target="_blank">효율적인 해킹</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"/> | <a href="./../solution/graph_traversal/1325">바로가기</a> | 완료
 | 04 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/2178" target="_blank">2178</a> | <a href="https://www.acmicpc.net/problem/2178" target="_blank">미로 탐색</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/> | <a href="./../solution/graph_traversal/2178">바로가기</a> | 완료
-| 05 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/2667" target="_blank">2667</a> | <a href="https://www.acmicpc.net/problem/2667" target="_blank">단지번호붙이기</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/> | <a href="./../solution/graph_traversal/2667">바로가기</a> |
-| 06 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/7576" target="_blank">7576</a> | <a href="https://www.acmicpc.net/problem/7576" target="_blank">토마토</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/> | <a href="./../solution/graph_traversal/7576">바로가기</a> |
-| 07 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/7569" target="_blank">7569</a> | <a href="https://www.acmicpc.net/problem/7569" target="_blank">토마토</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/> | <a href="./../solution/graph_traversal/7569">바로가기</a> |
+| 05 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/2667" target="_blank">2667</a> | <a href="https://www.acmicpc.net/problem/2667" target="_blank">단지번호붙이기</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/> | <a href="./../solution/graph_traversal/2667">바로가기</a> | 완료
+| 06 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/7576" target="_blank">7576</a> | <a href="https://www.acmicpc.net/problem/7576" target="_blank">토마토</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/> | <a href="./../solution/graph_traversal/7576">바로가기</a> | 완료
+| 07 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/7569" target="_blank">7569</a> | <a href="https://www.acmicpc.net/problem/7569" target="_blank">토마토</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/> | <a href="./../solution/graph_traversal/7569">바로가기</a> | [질문중](https://www.acmicpc.net/board/view/78863)
 | 08 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/16918" target="_blank">16918</a> | <a href="https://www.acmicpc.net/problem/16918" target="_blank">봄버맨</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/> | <a href="./../solution/graph_traversal/16918">바로가기</a> |
 | 09 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/5547" target="_blank">5547</a> | <a href="https://www.acmicpc.net/problem/5547" target="_blank">일루미네이션</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/> | <a href="./../solution/graph_traversal/5547">바로가기</a> |
 | 10 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/14502" target="_blank">14502</a> | <a href="https://www.acmicpc.net/problem/14502" target="_blank">연구소</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"/> | <a href="./../solution/graph_traversal/14502">바로가기</a> | 
