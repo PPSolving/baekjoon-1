@@ -29,8 +29,8 @@ public class P7569 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        N = sc.nextInt();
         M = sc.nextInt();
+        N = sc.nextInt();
         H = sc.nextInt();
         //init
         map = new int[N][M][H];
