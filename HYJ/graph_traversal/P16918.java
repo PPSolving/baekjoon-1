@@ -5,7 +5,7 @@ public class P16918 {
 
     static int R, C, N;
     static int[][] map;
-    static LinkedList<Position> list;
+    static LinkedList<Position> list; //터트려야할 폭탄 위치를 담은 리스트
 
     static class Position {
         int y;
@@ -25,8 +25,8 @@ public class P16918 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        R = sc.nextByte();
-        C = sc.nextByte();
+        R = sc.nextInt();
+        C = sc.nextInt();
         N = sc.nextInt();
 
         //init
@@ -36,8 +36,7 @@ public class P16918 {
             String[] str = sc.next().split("");
             for (int x = 0; x < C; x++) {
                 if (str[x].equals("O")) {
-                    map[y][x] = 2; //0은 폭탄 위치로 2일 부터 시작
-                    list.add(new Position(y, x));
+                    map[y][x] = 0; //0은 폭탄 위치로 2일 부터 시작
                 } else map[y][x] = -1; //-1은 빈공간
             }
         }
@@ -57,42 +56,36 @@ public class P16918 {
         System.out.println(buf.toString());
     }
 
-    //day = 짝수인 경우 => 짝수 초가 지난 경우 빈칸에 모두 폭탄 설치된다. -> 설치된 폭탄 모두 list로 들어간다.
-    //day = 홀수인 경우 => 홀수 초가 지난 후 list에서 2초인 폭탄 다 꺼내고 주변 터트리고 0초된 폭탄만나면 나머지 모두 꺼내서 2초로 변경하여 다시 저장
     static void bfs(int day) {
         int[][] directions = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
 
-        if (day % 2 == 0) { //짝수일
+        //짝수일 -> 완전 탐색해야하므로 빈공간이면 0일로 두고, 0일인건 2일로 바꾼다.
+        if (day % 2 == 0) {
+            list.clear();
             for (int y = 0; y < R; y++) {
                 for (int x = 0; x < C; x++) {
                     if (map[y][x] == -1) {
                         map[y][x] = 0; //0 일로 넣기
-                        list.add(new Position(y, x));
+                    }else if(map[y][x] == 0){ 
+                        //0일은 터져야 하므로 2로(2일을 의미) 변경
+                        map[y][x] = 2;
+                        list.add(new Position(y,x));
                     }
                 }
             }
-        } else { //홀수일
+        } else { //홀수인 -> 제거 되야할 2일, 주변을 모두 터트린다. (-1) 값으로 변경
             while(!list.isEmpty()){
                 Position cur = list.pollFirst();
-                if (map[cur.y][cur.x] == 0) { //아직 0일이면 나머지 다 0일 이므로 break;
-                    list.addFirst(cur);
-                    break;
-                } else if (map[cur.y][cur.x] == 2) { //2일이면 주변 까지 폭탄 터트리기 (-1)으로
-                    map[cur.y][cur.x] = -1;
-                    for(int i=0; i<directions.length; i++){
-                        int nextY = cur.y+directions[i][0];
-                        int nextX = cur.x+directions[i][1];
+                map[cur.y][cur.x] = -1;
+                for(int i=0; i<directions.length; i++){
+                    int nextY = cur.y+directions[i][0];
+                    int nextX = cur.x+directions[i][1];
 
-                        if(0<=nextY && nextY < R
-                                && 0<= nextX && nextX < C){
-                            list.remove(new Position(nextY,nextX));
-                            map[nextY][nextX] = -1;
-                        }
+                    if(0<=nextY && nextY < R
+                            && 0<= nextX && nextX < C){
+                        map[nextY][nextX] = -1;
                     }
                 }
-            }
-            for (Position cur : list) { //남은건 0일뿐 이므로 일수 +2
-                map[cur.y][cur.x] += 2;
             }
         }
     }
