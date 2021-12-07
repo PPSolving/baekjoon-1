@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 /**
- * DNA - 문제이해 잘못해서 품
+ * DNA - 문제이해 잘못해서 품 - s1~sn 중에서 고르는것으로 착각
  */
 public class P1969_test {
     static char[] dna = new char[]{'T','A','G','C'}; //DNA
