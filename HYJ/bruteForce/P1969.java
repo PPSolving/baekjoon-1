@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * DNA
+ * DNA - 완료
  */
 public class P1969 {
     static Map<String,Integer>[] map;
